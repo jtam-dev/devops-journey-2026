@@ -121,4 +121,23 @@ Sorting File by Timestamps
 - `shred -vu -n 100 file1`:secure removal of a file,`-u` remove from file system after overwirte > size to 0; `-n 100` rewrite with random 0 and 1 100times to prevent recover.
 
 **Piping and Command Redirection**
+- Using the *pipe symbol (|)* we can connect two or more commands at a time.
 
+- `ls -lSh /etc/ | head`: seeing the first 10 files by size (`-l` long list, `-S` sorting by size, `h` human readable)
+- `ps -ef | grep sshd`: checking if sshd running (`-e` all process, `-f` full format)
+- `ps aux --sort=-%mem | head -n 3`:showing the first 3 process by memory consumption
+
+- `cat -n /var/log/auth.log | grep -a "authentication failure" | wc -l`: show log with line `-n`|grep "authentication failure" `-a` treat everything is test (included binary number) | count the total after filter(grep)
+>> output = 6
+
+**Command Redirection**
+*will overwiter origin content*
+- `ps aux > running_processes.txt`
+- `who -H > loggedin_users.txt`
+
+*will appending the file*
+- `id >> loggedin_users.txt`
+
+*handle error*
+- `tail -n 3 /etc/shadow 2> error.txt`: error.txt = Permission denied
+- `tail -n 2 /etc/passwd /etc/shadow > output.txt 2>&1`: writing output and error together to output.txt
