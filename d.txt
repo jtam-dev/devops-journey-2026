@@ -1,0 +1,14 @@
+total 500
+59090 -rw-r--r-- 1 jason jason     53 Jun  8 15:05 README.md
+49317 -rw-r--r-- 1 jason jason    896 Jun 16 16:55 a
+52596 -rw-r--r-- 1 jason jason    896 Jun 16 16:55 b
+ 2603 -rw-r--r-- 1 jason jason     39 Jun 16 20:08 c
+21073 -rw-r--r-- 1 jason jason      0 Jun 16 21:09 d.txt
+52592 -rw-r--r-- 1 jason jason     50 Jun 12 16:09 data.txt
+59143 -rw-r--r-- 1 jason jason   2350 Jun  8 19:54 day1-linux-practice.md
+45281 -rw-r--r-- 1 jason jason   5832 Jun 10 19:59 day2-linux-notes.md
+56732 -rw-r--r-- 1 jason jason   3634 Jun 13 21:52 day3-linux-notes.md
+57906 -rw-r--r-- 1 jason jason   3772 Jun 16 20:53 day4-linux-notes.md
+19769 -rw-r--r-- 1 root  root  458800 Jun 16 20:34 etc.tar.gz
+19231 -rw-r--r-- 1 jason jason     82 Jun 16 17:06 output.txt
+19389 -rw-r--r-- 1 jason jason   3517 Jun 16 20:03 sshd_config
