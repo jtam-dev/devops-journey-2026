@@ -2,6 +2,7 @@
 
 ## Learning Objectives
 - Searching for String in Binary Files
+- Comparing files
 - The Basics of VIM text Editor
 - Compressing & Archiving
 - The Inode Structure
@@ -14,9 +15,12 @@
 - d.txt:`ls -li > d.txt`
 - `cp /etc/ssh/sshd_cofig .`: copy sshd_config to current directory
 
+## Searching for Strings in Binary Files (strings)
+- "strings" command is uesed to extract and display readable text from non-text files(exectables,object)
+- `strings /bin/ls` : extract readable strings from binary file
+- `strings /bin/ls | grep "version"`
 
-## Problems Encountered & Solutions
-*Searching Files* 
+## Comparing Files
 - `cmp a b`: binary or text files, fast comparison of whether files are identical or different at byte level 
 output: a b differ: byte 285, line 5
 - `cmp /user/bin/ls .ls`: no output is good (same file)
@@ -26,7 +30,7 @@ output: two same hash code displayed. (identical same = 100% same!)
 output: display the different between two text files
 
 
-*VIM text editor*
+## VIM text editor
 - `vi output.txt`: open vim editor
 Normal Mode (Esc -> confirm no --INSERT--)
 - `:wq`: quit & save vim editor ; `:w` = save ; `:q` = quit
@@ -56,7 +60,7 @@ How to handle two files at the same time?
 - `vi -o a c`:open two files in a split window; `Ctrl + w`: to move around this two files
 - `vi -d a b`:open two files in a split window to compare the different
 
-*Compressing & Archiving*
+## Compressing & Archiving
 - Archiving : 10 100 kilobytes files archive to 1 1000 kilobytes file (same size->easier to move)
 - Compressing: 10 100 kilobytes files -> 200 kilobytes maybe(differnt compress ratio)
 
@@ -75,7 +79,7 @@ How to handle two files at the same time?
 - `tar -xjvf etc.tar.bc2 -C my_backup/`:extract the archived file to a specify directory
 - `sudo tar -cjvf etc-$(date +%F).tar.bz2 /etc/`: a trick to create a backup file with date (etc-2026-05-03.tar.bz2)
 
-*The Inode Structure*
+## The Inode Structure
 - Each file on the disk has a data structure called *index node* or *inode* associated with it
 - This structure stores metadata information about the file such as the type, file's permission, file's owner and group owner, timestamp information , file size and so on
 - *It is actually contains all file information except the file contents and the name*
