@@ -48,13 +48,13 @@ lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536 (Loop back to localhost)
 
 ###  Short keys
 
-Ctrl + C,Cancel / Cut,"""C 就係 Cancel，緊急剎車！""",中斷指令（最重要）
-Ctrl + Z,Zuspend / Zzz,"""Z 就係瞓覺，暫停程式""",暫停指令（放 background）
-Ctrl + D,Done / Delete,"""D 就係 Done，登出/退出""",登出 Terminal
-Ctrl + L,Lean / List clear,"""L 就係 Clean 螢幕，好似抹枱""",清屏（代替 clear）
-Ctrl + A,All the way to Ahead,"""A = 最 A頭（Beginning）""",跳到行首
-Ctrl + E,End,"""E = End，最尾""",跳到行尾
-Ctrl + U,Unload / Up,"""U = 清晒 Up面全部""",清空整行
-Ctrl + K,Kill,"""K = Kill 殺到尾""",刪除游標之後所有字
-Ctrl + W,Word,"""W = 刪一個 Word""",刪除前一個單詞
-Ctrl + R,Reverse search,"""R = Recall，回憶之前打過嘅指令""",搜尋歷史指令（最強）
+Ctrl + C,Cancel /  (kill the process)
+Ctrl + Z,Zuspend / (stop the process)
+Ctrl + D,Done / (sign out) 
+Ctrl + L,Clear / (clean the terminal)
+Ctrl + A,Ahead / (go to beginging)
+Ctrl + E,End / (go to th end)
+Ctrl + U,Unload / (delete a line)
+Ctrl + K,Kill / (clean all after the cursor)
+Ctrl + W,Word / (delete a word before )
+Ctrl + R,Reverse search / (search for command history)
