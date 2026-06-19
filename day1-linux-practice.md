@@ -27,6 +27,7 @@ Date: Mon Jun  8 15:20:35 HKT 2026
 ### Net-tools
 - ifconfig 
 
+output:
 eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500 (network interface, up, wifi)
         inet 172.17.225.166  netmask 255.255.240.0  broadcast 172.17.239.255 (ip,subnet mask,broadcast)
         inet6 fe80::215:5dff:fe85:ece2  prefixlen 64  scopeid 0x20<link>
@@ -48,13 +49,13 @@ lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536 (Loop back to localhost)
 
 ###  Short keys
 
-Ctrl + C,Cancel /  (kill the process)
-Ctrl + Z,Zuspend / (stop the process)
-Ctrl + D,Done / (sign out) 
-Ctrl + L,Clear / (clean the terminal)
-Ctrl + A,Ahead / (go to beginging)
-Ctrl + E,End / (go to th end)
-Ctrl + U,Unload / (delete a line)
-Ctrl + K,Kill / (clean all after the cursor)
-Ctrl + W,Word / (delete a word before )
-Ctrl + R,Reverse search / (search for command history)
+- Ctrl + C,Cancel /  (kill the process)
+- Ctrl + Z,Zuspend / (stop the process)
+- Ctrl + D,Done / (sign out) 
+- Ctrl + L,Clear / (clean the terminal)
+- Ctrl + A,Ahead / (go to beginging)
+- Ctrl + E,End / (go to the end)
+- Ctrl + U,Unload / (delete a line)
+- Ctrl + K,Kill / (clean all after the cursor)
+- Ctrl + W,Word / (delete a word before )
+- Ctrl + R,Reverse search / (search for command history)
