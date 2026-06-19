@@ -13,7 +13,7 @@ John,25,Developer
 Jane,30,Designer
 Jack,22,Analyst
 
-### "cut" command  : extract the exact specific sections from each lone of input 
+### "cut" command  : extract the exact specific sections from each line of input 
 - `cut -d',' -f1 data.txt`: `-d ','` (delimiter is a comma ,) ; `-f1` (get the first field)
 
 *terminal*
@@ -72,13 +72,7 @@ data.txt
 
 *The Kernel Ring Buffer* is like the "Black Box Flight Recorder" of your Linux server. It is a highly protected, small slice of memory (RAM) where the Linux Kernel immediately logs everything happening at the lowest level of the computer.
 
-- `dmesg|grep error -A 3 -B 4 "error"`: display message -> "Kernal Ring Buffer" ;`-A` after 3 lines , `-B` before 4 lines
+- `dmesg|grep -A 3 -B 4 "error"` :  display message -> "Kernal Ring Buffer" ;`-A` after 3 lines , `-B` before 4 lines
 - `sudo ss -tupan | grep "53"` : check netstat, -tupan  (tcp, udp ,pid ,all ,number)
-
-## Practice Records
-- 
-
-## Problems Encountered & Solutions
-- 
 
 
